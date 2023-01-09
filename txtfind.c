@@ -1,13 +1,11 @@
-
 #include <stdio.h>
 #include <string.h>
 #define LINE 256
 #define WORD 30
-
 int getLine(char s[])
 {
     int i;
-    char chline;
+    char chline = '\0';
     for (i = 0; i <LINE ; ++i)
     {
         scanf("%c",&chline);
@@ -25,7 +23,7 @@ int getLine(char s[])
 }
 int getword(char w[]){
     int i;
-    char chword;
+    char chword = '\0';
     for (i = 0; i <WORD ; i++)
     {
         scanf("%c",&chword);
